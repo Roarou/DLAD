@@ -27,13 +27,13 @@ def main():
         coloring[i] = color_map[sem_label[i, 0]]
 
     coloring = coloring[velo[:,0]>0]/255
-    for car in cars:
+    #for car in cars:
+     #   draw_box(car,nor_trans)
 
-        draw_box(car,nor_trans)
     plt.scatter(xline, yline,s=0.01,c=coloring)
     plt.imshow(image)
     plt.axis('off')
-    plt.savefig("task2.jpeg")
+    plt.savefig("task2-1.jpeg")
     plt.show()
 
 
